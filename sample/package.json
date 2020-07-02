@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "camunda_bpm_rest_api": "file:camunda_bpm_rest_api-7.13.0.tgz"
+  }
+}
