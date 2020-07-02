@@ -8,7 +8,7 @@
 
 计划在 Nodejs 中使用本 SDK，而不想自行编译的，可以使用预编译版本进行安装。
 
-
+[Camunda BPM JSSDK 7.13.0](https://github.com/hustrlee/camunda-bpm-jssdk/raw/master/sample/camunda_bpm_rest_api-7.13.0.tgz)
 
 
 
