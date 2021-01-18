@@ -18,3 +18,4 @@ Camunda 官方提供了 [JS Client Library](https://github.com/camunda/camunda-b
 ./clientgen.sh
 ```
 
+生成的客户端库保存在 `jssdk-out/` 目录下。
