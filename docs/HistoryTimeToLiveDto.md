@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.HistoryTimeToLiveDto
+# CamundaJssdk.HistoryTimeToLiveDto
 
 ## Properties
 

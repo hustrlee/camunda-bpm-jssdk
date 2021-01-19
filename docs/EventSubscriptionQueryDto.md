@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.EventSubscriptionQueryDto
+# CamundaJssdk.EventSubscriptionQueryDto
 
 ## Properties
 

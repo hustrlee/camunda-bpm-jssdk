@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.DeploymentDtoAllOf
+# CamundaJssdk.DeploymentDtoAllOf
 
 ## Properties
 

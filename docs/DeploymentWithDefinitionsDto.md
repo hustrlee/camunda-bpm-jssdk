@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.DeploymentWithDefinitionsDto
+# CamundaJssdk.DeploymentWithDefinitionsDto
 
 ## Properties
 

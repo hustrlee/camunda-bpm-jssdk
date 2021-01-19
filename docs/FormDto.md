@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.FormDto
+# CamundaJssdk.FormDto
 
 ## Properties
 

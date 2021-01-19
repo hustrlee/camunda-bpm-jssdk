@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.AuthorizationExceptionDtoAllOf
+# CamundaJssdk.AuthorizationExceptionDtoAllOf
 
 ## Properties
 

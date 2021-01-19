@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.HistoricProcessInstanceApi
+# CamundaJssdk.HistoricProcessInstanceApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -28,9 +28,9 @@ Deletes a process instance from the history by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let id = "id_example"; // String | The id of the historic process instance to be deleted.
 let opts = {
   'failIfNotExists': true // Boolean | If set to `false`, the request will still be successful if the process id is not found.
@@ -76,9 +76,9 @@ Delete multiple historic process instances asynchronously (batch). At least &#x6
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let opts = {
   'deleteHistoricProcessInstancesDto': {"deleteReason":"aReason","historicProcessInstanceIds":["aProcess","secondProcess"],"historicProcessInstanceQuery":{"startedAfter":"2016-10-11T11:44:13.000+0200","finishedBefore":"2016-10-13T11:44:17.000+0200"}} // DeleteHistoricProcessInstancesDto | 
 };
@@ -122,9 +122,9 @@ Deletes all variables of a process instance from the history by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance for which all historic variables are to be deleted.
 apiInstance.deleteHistoricVariableInstancesOfHistoricProcessInstance(id).then(() => {
   console.log('API called successfully.');
@@ -166,9 +166,9 @@ Retrieves a historic process instance by id, according to the &#x60;HistoricProc
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let id = "id_example"; // String | The id of the historic process instance to be retrieved.
 apiInstance.getHistoricProcessInstance(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -210,9 +210,9 @@ Retrieves a report about the duration of completed process instances, grouped by
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let reportType = "reportType_example"; // String | **Mandatory.** Specifies the type of the report to retrieve. To retrieve a report about the duration of process instances, the value must be set to `duration`.
 let periodUnit = "periodUnit_example"; // String | **Mandatory.** Specifies the granularity of the report. Valid values are `month` and `quarter`.
 let opts = {
@@ -266,9 +266,9 @@ Queries for historic process instances that fulfill the given parameters. The si
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let opts = {
   'sortBy': "sortBy_example", // String | Sort the results lexicographically by a given criterion. Must be used in conjunction with the sortOrder parameter.
   'sortOrder': "sortOrder_example", // String | Sort the results in a given order. Values may be asc for ascending order or desc for descending order. Must be used in conjunction with the sortBy parameter.
@@ -408,9 +408,9 @@ Queries for the number of historic process instances that fulfill the given para
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let opts = {
   'processInstanceId': "processInstanceId_example", // String | Filter by process instance id.
   'processInstanceIds': "processInstanceIds_example", // String | Filter by process instance ids. Filter by a comma-separated list of `Strings`.
@@ -542,9 +542,9 @@ Queries for historic process instances that fulfill the given parameters. This m
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let opts = {
   'firstResult': 56, // Number | Pagination of results. Specifies the index of the first result to return.
   'maxResults': 56, // Number | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
@@ -592,9 +592,9 @@ Queries for the number of historic process instances that fulfill the given para
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let opts = {
   'historicProcessInstanceQueryDto': {"finishedAfter":"2013-01-01T00:00:00.000+0200","finishedBefore":"2013-04-01T23:59:59.000+0200","executedActivityAfter":"2013-03-23T13:42:44.000+0200","variables":[{"name":"myVariable","operator":"eq","value":"camunda"},{"name":"mySecondVariable","operator":"neq","value":124}]} // HistoricProcessInstanceQueryDto | 
 };
@@ -638,9 +638,9 @@ Sets the removal time to multiple historic process instances asynchronously (bat
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.HistoricProcessInstanceApi();
+let apiInstance = new CamundaJssdk.HistoricProcessInstanceApi();
 let opts = {
   'setRemovalTimeToHistoricProcessInstancesDto': {"absoluteRemovalTime":"2019-05-05T11:56:24.725+0200","hierarchical":true,"historicProcessInstanceQuery":{"unfinished":true},"historicProcessInstanceIds":["b4d2ad98-7240-11e9-98b7-be5e0f7575b7","b4d2ad94-7240-11e9-98b7-be5e0f7575b7"]} // SetRemovalTimeToHistoricProcessInstancesDto | 
 };

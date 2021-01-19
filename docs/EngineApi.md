@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.EngineApi
+# CamundaJssdk.EngineApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -19,9 +19,9 @@ Retrieves the names of all process engines available on your platform. **Note**:
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.EngineApi();
+let apiInstance = new CamundaJssdk.EngineApi();
 apiInstance.getProcessEngineNames().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

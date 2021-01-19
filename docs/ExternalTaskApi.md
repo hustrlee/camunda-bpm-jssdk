@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ExternalTaskApi
+# CamundaJssdk.ExternalTaskApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -35,9 +35,9 @@ Completes an external task by id and updates process variables.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the task to complete.
 let opts = {
   'completeExternalTaskDto': {"workerId":"aWorker","variables":{"aVariable":{"value":"aStringValue"},"anotherVariable":{"value":42},"aThirdVariable":{"value":true}},"localVariables":{"aLocalVariable":{"value":"aStringValue"}}} // CompleteExternalTaskDto | 
@@ -83,9 +83,9 @@ Extends the timeout of the lock by a given amount of time.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task.
 let opts = {
   'extendLockOnExternalTaskDto': {"workerId":"anId","newDuration":100000} // ExtendLockOnExternalTaskDto | 
@@ -131,9 +131,9 @@ Fetches and locks a specific number of external tasks for execution by a worker.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'fetchExternalTasksDto': {"workerId":"aWorkerId","maxTasks":2,"usePriority":true,"topics":[{"topicName":"createOrder","lockDuration":10000,"variables":["orderId"]}]} // FetchExternalTasksDto | 
 };
@@ -177,9 +177,9 @@ Retrieves an external task by id, corresponding to the &#x60;ExternalTask&#x60; 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task to be retrieved.
 apiInstance.getExternalTask(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -221,9 +221,9 @@ Retrieves the error details in the context of a running external task by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task for which the error details should be retrieved.
 apiInstance.getExternalTaskErrorDetails(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -265,9 +265,9 @@ Queries for the external tasks that fulfill given parameters. Parameters may be 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'externalTaskId': "externalTaskId_example", // String | Filter by an external task's id.
   'externalTaskIdIn': "externalTaskIdIn_example", // String | Filter by the comma-separated list of external task ids.
@@ -359,9 +359,9 @@ Queries for the number of external tasks that fulfill given parameters. Takes th
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'externalTaskId': "externalTaskId_example", // String | Filter by an external task's id.
   'externalTaskIdIn': "externalTaskIdIn_example", // String | Filter by the comma-separated list of external task ids.
@@ -445,9 +445,9 @@ Queries for distinct topic names of external tasks that fulfill given parameters
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'withLockedTasks': true, // Boolean | Only include external tasks that are currently locked (i.e., they have a lock time and it has not expired). Value may only be `true`, as `false` matches any external task.
   'withUnlockedTasks': true, // Boolean | Only include external tasks that are currently not locked (i.e., they have no lock or it has expired). Value may only be `true`, as `false` matches any external task.
@@ -495,9 +495,9 @@ Reports a business error in the context of a running external task by id. The er
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task in which context a BPMN error is reported.
 let opts = {
   'externalTaskBpmnError': {"workerId":"aWorker","errorCode":"bpmn-error","errorMessage":"anErrorMessage","variables":{"aVariable":{"value":"aStringValue","type":"String"},"anotherVariable":{"value":true,"type":"Boolean"}}} // ExternalTaskBpmnError | 
@@ -543,9 +543,9 @@ Reports a failure to execute an external task by id. A number of retries and a t
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task to report a failure for.
 let opts = {
   'externalTaskFailureDto': {"workerId":"aWorker","errorMessage":"Does not compute","retries":3,"retryTimeout":60000} // ExternalTaskFailureDto | 
@@ -591,9 +591,9 @@ Queries for external tasks that fulfill given parameters in the form of a JSON o
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'firstResult': 56, // Number | Pagination of results. Specifies the index of the first result to return.
   'maxResults': 56, // Number | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
@@ -641,9 +641,9 @@ Queries for the number of external tasks that fulfill given parameters. This met
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'externalTaskQueryDto': {"topicName":"aTopicName","withRetriesLeft":true} // ExternalTaskQueryDto | 
 };
@@ -687,9 +687,9 @@ Sets the priority of an existing external task by id. The default value of a pri
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task to set the priority for.
 let opts = {
   'priorityDto': {"priority":5} // PriorityDto | 
@@ -735,9 +735,9 @@ Sets the number of retries left to execute an external task by id. If retries ar
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task to set the number of retries for.
 let opts = {
   'retriesDto': {"retries":123} // RetriesDto | 
@@ -783,9 +783,9 @@ Sets the number of retries left to execute external tasks by id synchronously. I
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'setRetriesForExternalTasksDto': {"retries":123,"externalTaskIds":["anExternalTask","anotherExternalTask"]} // SetRetriesForExternalTasksDto | 
 };
@@ -829,9 +829,9 @@ Sets the number of retries left to execute external tasks by id asynchronously. 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let opts = {
   'setRetriesForExternalTasksDto': {"retries":123,"externalTaskIds":["anExternalTask","anotherExternalTask"]} // SetRetriesForExternalTasksDto | 
 };
@@ -875,9 +875,9 @@ Unlocks an external task by id. Clears the task&#39;s lock expiration time and w
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ExternalTaskApi();
+let apiInstance = new CamundaJssdk.ExternalTaskApi();
 let id = "id_example"; // String | The id of the external task to unlock.
 apiInstance.unlock(id).then(() => {
   console.log('API called successfully.');

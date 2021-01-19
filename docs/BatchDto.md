@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.BatchDto
+# CamundaJssdk.BatchDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.RetriesDto
+# CamundaJssdk.RetriesDto
 
 ## Properties
 

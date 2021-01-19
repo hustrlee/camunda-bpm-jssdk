@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.MissingAuthorizationDto
+# CamundaJssdk.MissingAuthorizationDto
 
 ## Properties
 

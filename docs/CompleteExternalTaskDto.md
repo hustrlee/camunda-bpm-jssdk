@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.CompleteExternalTaskDto
+# CamundaJssdk.CompleteExternalTaskDto
 
 ## Properties
 

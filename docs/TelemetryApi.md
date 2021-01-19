@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TelemetryApi
+# CamundaJssdk.TelemetryApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -20,9 +20,9 @@ Configures whether Camunda receives data collection of the process engine setup 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TelemetryApi();
+let apiInstance = new CamundaJssdk.TelemetryApi();
 let opts = {
   'telemetryConfigurationDto': {"enableTelemetry":true} // TelemetryConfigurationDto | 
 };
@@ -66,9 +66,9 @@ Fetches Telemetry Configuration.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TelemetryApi();
+let apiInstance = new CamundaJssdk.TelemetryApi();
 apiInstance.getTelemetryConfiguration().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

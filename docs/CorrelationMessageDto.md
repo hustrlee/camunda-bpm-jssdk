@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.CorrelationMessageDto
+# CamundaJssdk.CorrelationMessageDto
 
 ## Properties
 

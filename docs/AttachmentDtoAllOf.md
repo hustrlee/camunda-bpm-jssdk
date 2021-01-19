@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.AttachmentDtoAllOf
+# CamundaJssdk.AttachmentDtoAllOf
 
 ## Properties
 

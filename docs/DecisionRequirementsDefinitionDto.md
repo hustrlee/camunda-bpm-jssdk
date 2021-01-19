@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.DecisionRequirementsDefinitionDto
+# CamundaJssdk.DecisionRequirementsDefinitionDto
 
 ## Properties
 

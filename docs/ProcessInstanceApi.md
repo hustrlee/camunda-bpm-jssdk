@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ProcessInstanceApi
+# CamundaJssdk.ProcessInstanceApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -42,9 +42,9 @@ Deletes a set of process instances asynchronously (batch) based on a historic pr
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'deleteProcessInstancesDto': {"deleteReason":"aReason","historicProcessInstanceQuery":{"startedBefore":"2017-04-28T11:24:37.765+0200"},"skipCustomListeners":true,"skipSubprocesses":true} // DeleteProcessInstancesDto | **Unallowed property**: `processInstanceQuery`
 };
@@ -88,9 +88,9 @@ Deletes a running process instance by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to be deleted.
 let opts = {
   'skipCustomListeners': false, // Boolean | If set to true, the custom listeners will be skipped.
@@ -142,9 +142,9 @@ Deletes a variable of a process instance by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to delete the variable from.
 let varName = "varName_example"; // String | The name of the variable to delete.
 apiInstance.deleteProcessInstanceVariable(id, varName).then(() => {
@@ -188,9 +188,9 @@ Deletes multiple process instances asynchronously (batch).
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'deleteProcessInstancesDto': {"deleteReason":"aReason","processInstanceIds":["aProcess","secondProcess"],"skipCustomListeners":true,"skipSubprocesses":true} // DeleteProcessInstancesDto | **Unallowed property**: `historicProcessInstanceQuery`
 };
@@ -234,9 +234,9 @@ Retrieves an Activity Instance (Tree) for a given process instance by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance for which the activity instance should be retrieved.
 apiInstance.getActivityInstanceTree(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -278,9 +278,9 @@ Retrieves a process instance by id, according to the &#x60;ProcessInstance&#x60;
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to be retrieved.
 apiInstance.getProcessInstance(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -322,9 +322,9 @@ Retrieves a variable of a given process instance by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to retrieve the variable for.
 let varName = "varName_example"; // String | The name of the variable to retrieve.
 let opts = {
@@ -372,9 +372,9 @@ Retrieves the content of a Process Variable by the Process Instance id and the P
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to retrieve the variable for.
 let varName = "varName_example"; // String | The name of the variable to retrieve.
 apiInstance.getProcessInstanceVariableBinary(id, varName).then((data) => {
@@ -418,9 +418,9 @@ Retrieves all variables of a given process instance by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to retrieve the variables from.
 let opts = {
   'deserializeValue': true // Boolean | Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on server side (default true).  If set to true, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson's](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API's classpath.  If set to false, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  Note: While true is the default value for reasons of backward compatibility, we recommend setting this parameter to false when developing web applications that are independent of the Java process applications deployed to the engine.
@@ -466,9 +466,9 @@ Queries for process instances that fulfill given parameters. Parameters may be s
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'sortBy': "sortBy_example", // String | Sort the results lexicographically by a given criterion. Must be used in conjunction with the sortOrder parameter.
   'sortOrder': "sortOrder_example", // String | Sort the results in a given order. Values may be asc for ascending order or desc for descending order. Must be used in conjunction with the sortBy parameter.
@@ -576,9 +576,9 @@ Queries for the number of process instances that fulfill given parameters.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'processInstanceIds': "processInstanceIds_example", // String | Filter by a comma-separated list of process instance ids.
   'businessKey': "businessKey_example", // String | Filter by process instance business key.
@@ -678,9 +678,9 @@ Submits a list of modification instructions to change a process instance&#39;s e
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to modify.
 let opts = {
   'processInstanceModificationDto': {"skipCustomListeners":true,"skipIoMappings":true,"instructions":[{"type":"startBeforeActivity","activityId":"activityId","variables":{"var":{"value":"aVariableValue","local":false,"type":"String"},"varLocal":{"value":"anotherVariableValue","local":true,"type":"String"}}},{"type":"cancel","activityInstanceId":"anActivityInstanceId"}],"annotation":"Modified to resolve an error."} // ProcessInstanceModificationDto | 
@@ -726,9 +726,9 @@ Submits a list of modification instructions to change a process instance&#39;s e
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to modify.
 let opts = {
   'processInstanceModificationDto': {"skipCustomListeners":true,"skipIoMappings":true,"instructions":[{"type":"startBeforeActivity","activityId":"activityId"},{"type":"cancel","activityInstanceId":"anActivityInstanceId"}],"annotation":"Modified to resolve an error."} // ProcessInstanceModificationDto | 
@@ -774,9 +774,9 @@ Updates or deletes the variables of a process instance by id. Updates precede de
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to set variables for.
 let opts = {
   'patchVariablesDto': {"modifications":{"aVariable":{"value":"aValue","type":"String"},"anotherVariable":{"value":42,"type":"Integer"}},"deletions":["aThirdVariable","FourthVariable"]} // PatchVariablesDto | 
@@ -822,9 +822,9 @@ Queries for process instances that fulfill given parameters through a JSON objec
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'firstResult': 56, // Number | Pagination of results. Specifies the index of the first result to return.
   'maxResults': 56, // Number | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
@@ -872,9 +872,9 @@ Queries for the number of process instances that fulfill the given parameters. T
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'processInstanceQueryDto': {"variables":[{"name":"myVariable","operator":"eq","value":"camunda"},{"name":"mySecondVariable","operator":"neq","value":124}],"processDefinitionId":"aProcessDefinitionId"} // ProcessInstanceQueryDto | 
 };
@@ -918,9 +918,9 @@ Sets a variable of a given process instance by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to set the variable for.
 let varName = "varName_example"; // String | The name of the variable to set.
 let opts = {
@@ -968,9 +968,9 @@ Sets the serialized value for a binary variable or the binary value for a file v
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to retrieve the variable for.
 let varName = "varName_example"; // String | The name of the variable to retrieve.
 let opts = {
@@ -1020,9 +1020,9 @@ Create a batch to set retries of jobs associated with given processes asynchrono
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'setJobRetriesByProcessDto': {"retries":5,"processInstances":["aProcess","secondProcess"],"processInstanceQuery":{"processDefinitionId":"aProcessDefinitionId"}} // SetJobRetriesByProcessDto | Please note that if both processInstances and processInstanceQuery are provided, then the resulting execution will be performed on the union of these sets. **Unallowed property**: `historicProcessInstanceQuery`
 };
@@ -1066,9 +1066,9 @@ Create a batch to set retries of jobs asynchronously based on a historic process
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'setJobRetriesByProcessDto': {"retries":5,"historicProcessInstanceQuery":{"startedBefore":"2017-04-28T11:24:37.769+0200"},"processInstances":["aProcess","secondProcess"]} // SetJobRetriesByProcessDto | Please note that if both processInstances and historicProcessInstanceQuery are provided, then the resulting execution will be performed on the union of these sets. **Unallowed property**: `processInstanceQuery`
 };
@@ -1112,9 +1112,9 @@ Update or create runtime process variables in the root scope of process instance
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'setVariablesAsyncDto': {"processInstanceIds":["b4d2ad98-7240-11e9-98b7-be5e0f7575b7"],"processInstanceQuery":{"processDefinitionKey":"my-process-definition-key"},"variables":{"myVariableName":{"value":"myStringValue"}}} // SetVariablesAsyncDto | 
 };
@@ -1158,9 +1158,9 @@ Activates or suspends process instances by providing certain criteria:  # Activa
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'processInstanceSuspensionStateDto': {"processDefinitionId":"aProcDefId","suspended":true} // ProcessInstanceSuspensionStateDto | 
 };
@@ -1204,9 +1204,9 @@ Activates or suspends process instances asynchronously with a list of process in
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let opts = {
   'processInstanceSuspensionStateAsyncDto': {"processInstanceIds":["processInstanceId1","processInstanceIdN"],"suspended":true} // ProcessInstanceSuspensionStateAsyncDto | 
 };
@@ -1250,9 +1250,9 @@ Activates or suspends a given process instance by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ProcessInstanceApi();
+let apiInstance = new CamundaJssdk.ProcessInstanceApi();
 let id = "id_example"; // String | The id of the process instance to activate or suspend.
 let opts = {
   'suspensionStateDto': {"suspended":true} // SuspensionStateDto | 

@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.SetRetriesForExternalTasksDto
+# CamundaJssdk.SetRetriesForExternalTasksDto
 
 ## Properties
 

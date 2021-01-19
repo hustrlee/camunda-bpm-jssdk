@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.VariableQueryParameterDto
+# CamundaJssdk.VariableQueryParameterDto
 
 ## Properties
 

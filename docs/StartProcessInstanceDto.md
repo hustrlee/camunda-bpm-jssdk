@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.StartProcessInstanceDto
+# CamundaJssdk.StartProcessInstanceDto
 
 ## Properties
 

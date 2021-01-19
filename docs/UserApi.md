@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.UserApi
+# CamundaJssdk.UserApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -27,9 +27,9 @@ The &#x60;/user&#x60; resource supports two custom &#x60;OPTIONS&#x60; requests,
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 apiInstance.availableOperations().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -67,9 +67,9 @@ The &#x60;/user&#x60; resource supports two custom &#x60;OPTIONS&#x60; requests,
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let id = "id_example"; // String | The id of the user to be deleted.
 apiInstance.availableUserOperations(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -111,9 +111,9 @@ Create a new user.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let opts = {
   'userDto': {"profile":{"id":"jonny1","firstName":"John","lastName":"Doe","email":"anEmailAddress"},"credentials":{"password":"s3cret"}} // UserDto | 
 };
@@ -157,9 +157,9 @@ Deletes a user by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let id = "id_example"; // String | The id of the user to be deleted.
 apiInstance.deleteUser(id).then(() => {
   console.log('API called successfully.');
@@ -201,9 +201,9 @@ Queries for the number of deployments that fulfill given parameters. Takes the s
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let opts = {
   'id': "id_example", // String | Filter by user id
   'idIn': "idIn_example", // String | Filter by a comma-separated list of user ids.
@@ -267,9 +267,9 @@ Retrieves a user&#39;s profile.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let id = "id_example"; // String | The id of the user to retrieve.
 apiInstance.getUserProfile(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -311,9 +311,9 @@ Query for a list of users using a list of parameters. The size of the result set
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let opts = {
   'id': "id_example", // String | Filter by user id
   'idIn': "idIn_example", // String | Filter by a comma-separated list of user ids.
@@ -385,9 +385,9 @@ Unlocks a user by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let id = "id_example"; // String | The id of the user to be unlocked.
 apiInstance.unlockUser(id).then(() => {
   console.log('API called successfully.');
@@ -429,9 +429,9 @@ Updates a user&#39;s credentials (password)
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.UserApi();
+let apiInstance = new CamundaJssdk.UserApi();
 let id = "id_example"; // String | The id of the user to be updated.
 let password = "password_example"; // String | The users new password.
 let authenticatedUserPassword = "authenticatedUserPassword_example"; // String | The password of the authenticated user who changes the password of the user (i.e., the user with passed id as path parameter).

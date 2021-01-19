@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ExtendLockOnExternalTaskDto
+# CamundaJssdk.ExtendLockOnExternalTaskDto
 
 ## Properties
 

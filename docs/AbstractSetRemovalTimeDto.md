@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.AbstractSetRemovalTimeDto
+# CamundaJssdk.AbstractSetRemovalTimeDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ConditionApi
+# CamundaJssdk.ConditionApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -19,9 +19,9 @@ Triggers evaluation of conditions for conditional start event(s).  Internally th
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.ConditionApi();
+let apiInstance = new CamundaJssdk.ConditionApi();
 let opts = {
   'evaluationConditionDto': {"variables":{"temperature":{"value":24,"type":"Integer","valueInfo":{"transient":true}},"city":{"value":"Parma","type":"String"}},"businessKey":"aBusinessKey","tenantId":"aTenantId"} // EvaluationConditionDto | 
 };

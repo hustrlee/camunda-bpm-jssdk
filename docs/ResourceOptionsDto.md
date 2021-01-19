@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ResourceOptionsDto
+# CamundaJssdk.ResourceOptionsDto
 
 ## Properties
 

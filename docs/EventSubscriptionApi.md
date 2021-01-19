@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.EventSubscriptionApi
+# CamundaJssdk.EventSubscriptionApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -20,9 +20,9 @@ Queries for event subscriptions that fulfill given parameters. The size of the r
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.EventSubscriptionApi();
+let apiInstance = new CamundaJssdk.EventSubscriptionApi();
 let opts = {
   'eventSubscriptionId': "eventSubscriptionId_example", // String | Only select subscription with the given id.
   'eventName': "eventName_example", // String | Only select subscriptions for events with the given name.
@@ -90,9 +90,9 @@ Queries for the number of event subscriptions that fulfill given parameters. Tak
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.EventSubscriptionApi();
+let apiInstance = new CamundaJssdk.EventSubscriptionApi();
 let opts = {
   'eventSubscriptionId': "eventSubscriptionId_example", // String | Only select subscription with the given id.
   'eventName': "eventName_example", // String | Only select subscriptions for events with the given name.

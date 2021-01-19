@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ActivityInstanceDto
+# CamundaJssdk.ActivityInstanceDto
 
 ## Properties
 

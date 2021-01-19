@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.VersionDto
+# CamundaJssdk.VersionDto
 
 ## Properties
 

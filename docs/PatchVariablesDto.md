@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.PatchVariablesDto
+# CamundaJssdk.PatchVariablesDto
 
 ## Properties
 

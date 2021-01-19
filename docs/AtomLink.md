@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.AtomLink
+# CamundaJssdk.AtomLink
 
 ## Properties
 

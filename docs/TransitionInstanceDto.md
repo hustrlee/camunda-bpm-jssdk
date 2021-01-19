@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TransitionInstanceDto
+# CamundaJssdk.TransitionInstanceDto
 
 ## Properties
 

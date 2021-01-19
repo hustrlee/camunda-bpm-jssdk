@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.EventSubscriptionQueryDtoSorting
+# CamundaJssdk.EventSubscriptionQueryDtoSorting
 
 ## Properties
 

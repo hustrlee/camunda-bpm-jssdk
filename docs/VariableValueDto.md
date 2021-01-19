@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.VariableValueDto
+# CamundaJssdk.VariableValueDto
 
 ## Properties
 

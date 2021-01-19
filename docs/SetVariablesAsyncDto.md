@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.SetVariablesAsyncDto
+# CamundaJssdk.SetVariablesAsyncDto
 
 ## Properties
 

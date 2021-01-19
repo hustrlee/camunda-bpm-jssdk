@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.SuspensionStateDto
+# CamundaJssdk.SuspensionStateDto
 
 ## Properties
 

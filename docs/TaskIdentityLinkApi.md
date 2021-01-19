@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TaskIdentityLinkApi
+# CamundaJssdk.TaskIdentityLinkApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -21,9 +21,9 @@ Adds an identity link to a task by id. Can be used to link any user or group to 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskIdentityLinkApi();
+let apiInstance = new CamundaJssdk.TaskIdentityLinkApi();
 let id = "id_example"; // String | The id of the task to add a link to.
 let opts = {
   'identityLinkDto': {"groupId":"aNewGroupId","type":"candidate"} // IdentityLinkDto | 
@@ -69,9 +69,9 @@ Removes an identity link from a task by id
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskIdentityLinkApi();
+let apiInstance = new CamundaJssdk.TaskIdentityLinkApi();
 let id = "id_example"; // String | The id of the task to remove a link from.
 let opts = {
   'identityLinkDto': {"groupId":"theOldGroupId","type":"candidate"} // IdentityLinkDto | 
@@ -117,9 +117,9 @@ Gets the identity links for a task by id, which are the users and groups that ar
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskIdentityLinkApi();
+let apiInstance = new CamundaJssdk.TaskIdentityLinkApi();
 let id = "id_example"; // String | The id of the task to retrieve the identity links for.
 let opts = {
   'type': "type_example" // String | Filter by the type of links to include.

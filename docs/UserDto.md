@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.UserDto
+# CamundaJssdk.UserDto
 
 ## Properties
 

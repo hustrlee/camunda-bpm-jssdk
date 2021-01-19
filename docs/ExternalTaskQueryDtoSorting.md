@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ExternalTaskQueryDtoSorting
+# CamundaJssdk.ExternalTaskQueryDtoSorting
 
 ## Properties
 

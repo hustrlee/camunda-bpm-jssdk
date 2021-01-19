@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TaskAttachmentApi
+# CamundaJssdk.TaskAttachmentApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -23,9 +23,9 @@ Creates an attachment for a task.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskAttachmentApi();
+let apiInstance = new CamundaJssdk.TaskAttachmentApi();
 let id = "id_example"; // String | The id of the task to add the attachment to.
 let opts = {
   'attachmentName': "attachmentName_example", // String | The name of the attachment.
@@ -79,9 +79,9 @@ Removes an attachment from a task by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskAttachmentApi();
+let apiInstance = new CamundaJssdk.TaskAttachmentApi();
 let id = "id_example"; // String | The id of the task.
 let attachmentId = "attachmentId_example"; // String | The id of the attachment to be removed.
 apiInstance.deleteAttachment(id, attachmentId).then(() => {
@@ -125,9 +125,9 @@ Retrieves a task attachment by task id and attachment id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskAttachmentApi();
+let apiInstance = new CamundaJssdk.TaskAttachmentApi();
 let id = "id_example"; // String | The id of the task.
 let attachmentId = "attachmentId_example"; // String | The id of the attachment to be retrieved.
 apiInstance.getAttachment(id, attachmentId).then((data) => {
@@ -171,9 +171,9 @@ Retrieves the binary content of a task attachment by task id and attachment id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskAttachmentApi();
+let apiInstance = new CamundaJssdk.TaskAttachmentApi();
 let id = "id_example"; // String | The id of the task.
 let attachmentId = "attachmentId_example"; // String | The id of the attachment to be retrieved.
 apiInstance.getAttachmentData(id, attachmentId).then((data) => {
@@ -217,9 +217,9 @@ Gets the attachments for a task.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskAttachmentApi();
+let apiInstance = new CamundaJssdk.TaskAttachmentApi();
 let id = "id_example"; // String | The id of the task to retrieve the attachments for.
 apiInstance.getAttachments(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

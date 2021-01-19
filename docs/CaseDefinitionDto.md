@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.CaseDefinitionDto
+# CamundaJssdk.CaseDefinitionDto
 
 ## Properties
 

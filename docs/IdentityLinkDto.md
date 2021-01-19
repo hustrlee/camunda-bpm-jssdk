@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.IdentityLinkDto
+# CamundaJssdk.IdentityLinkDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ProcessInstanceModificationInstructionDto
+# CamundaJssdk.ProcessInstanceModificationInstructionDto
 
 ## Properties
 

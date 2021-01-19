@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TaskCommentApi
+# CamundaJssdk.TaskCommentApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -21,9 +21,9 @@ Creates a comment for a task by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskCommentApi();
+let apiInstance = new CamundaJssdk.TaskCommentApi();
 let id = "id_example"; // String | The id of the task to add the comment to.
 let opts = {
   'commentDto': {"message":"a task comment"} // CommentDto | **Note:** Only the `message` property will be used. Every other property passed to this endpoint will be ignored.
@@ -69,9 +69,9 @@ Retrieves a task comment by task id and comment id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskCommentApi();
+let apiInstance = new CamundaJssdk.TaskCommentApi();
 let id = "id_example"; // String | The id of the task.
 let commentId = "commentId_example"; // String | The id of the comment to be retrieved.
 apiInstance.getComment(id, commentId).then((data) => {
@@ -115,9 +115,9 @@ Gets the comments for a task by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskCommentApi();
+let apiInstance = new CamundaJssdk.TaskCommentApi();
 let id = "id_example"; // String | The id of the task to retrieve the comments for.
 apiInstance.getComments(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ProcessDefinitionDiagramDto
+# CamundaJssdk.ProcessDefinitionDiagramDto
 
 ## Properties
 

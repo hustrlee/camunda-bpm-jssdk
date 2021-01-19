@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ExternalTaskBpmnErrorAllOf
+# CamundaJssdk.ExternalTaskBpmnErrorAllOf
 
 ## Properties
 

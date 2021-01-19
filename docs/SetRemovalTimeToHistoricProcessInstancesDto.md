@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.SetRemovalTimeToHistoricProcessInstancesDto
+# CamundaJssdk.SetRemovalTimeToHistoricProcessInstancesDto
 
 ## Properties
 

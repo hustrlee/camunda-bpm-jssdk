@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.DeploymentApi
+# CamundaJssdk.DeploymentApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -27,9 +27,9 @@ Creates a deployment.  **Security Consideration**  Deployments can contain custo
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let opts = {
   'tenantId': "tenantId_example", // String | The tenant id for the deployment to be created.
   'deploymentSource': "deploymentSource_example", // String | The source for the deployment to be created.
@@ -83,9 +83,9 @@ Deletes a deployment by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let id = "id_example"; // String | The id of the deployment to be deleted.
 let opts = {
   'cascade': false, // Boolean | `true`, if all process instances, historic process instances and jobs for this deployment should be deleted.
@@ -135,9 +135,9 @@ Retrieves a deployment by id, according to the &#x60;Deployment&#x60; interface 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let id = "id_example"; // String | The id of the deployment.
 apiInstance.getDeployment(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -179,9 +179,9 @@ Retrieves a deployment resource by resource id for the given deployment.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let id = "id_example"; // String | The id of the deployment
 let resourceId = "resourceId_example"; // String | The id of the deployment resource
 apiInstance.getDeploymentResource(id, resourceId).then((data) => {
@@ -225,9 +225,9 @@ Retrieves the binary content of a deployment resource for the given deployment b
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let id = "id_example"; // String | The id of the deployment.
 let resourceId = "resourceId_example"; // String | The id of the deployment resource.
 apiInstance.getDeploymentResourceData(id, resourceId).then((data) => {
@@ -271,9 +271,9 @@ Retrieves all deployment resources of a given deployment.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let id = "id_example"; // String | The id of the deployment to retrieve the deployment resources for.
 apiInstance.getDeploymentResources(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -315,9 +315,9 @@ Queries for deployments that fulfill given parameters. Parameters may be the pro
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let opts = {
   'id': "id_example", // String | Filter by deployment id
   'name': "name_example", // String | Filter by the deployment name. Exact match.
@@ -387,9 +387,9 @@ Queries for the number of deployments that fulfill given parameters. Takes the s
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let opts = {
   'id': "id_example", // String | Filter by deployment id
   'name': "name_example", // String | Filter by the deployment name. Exact match.
@@ -451,9 +451,9 @@ Re-deploys an existing deployment.  The deployment resources to re-deploy can be
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.DeploymentApi();
+let apiInstance = new CamundaJssdk.DeploymentApi();
 let id = "id_example"; // String | The id of the deployment to re-deploy.
 let opts = {
   'redeploymentDto': {"resourceIds":["aResourceId"],"resourceNames":["aResourceName"],"source":"cockpit"} // RedeploymentDto | 

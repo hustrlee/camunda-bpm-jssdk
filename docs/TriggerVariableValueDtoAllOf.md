@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TriggerVariableValueDtoAllOf
+# CamundaJssdk.TriggerVariableValueDtoAllOf
 
 ## Properties
 

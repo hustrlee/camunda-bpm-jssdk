@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ProcessInstanceWithVariablesDtoAllOf
+# CamundaJssdk.ProcessInstanceWithVariablesDtoAllOf
 
 ## Properties
 

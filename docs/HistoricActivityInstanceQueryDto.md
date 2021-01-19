@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.HistoricActivityInstanceQueryDto
+# CamundaJssdk.HistoricActivityInstanceQueryDto
 
 ## Properties
 

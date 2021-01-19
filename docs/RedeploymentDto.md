@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.RedeploymentDto
+# CamundaJssdk.RedeploymentDto
 
 ## Properties
 

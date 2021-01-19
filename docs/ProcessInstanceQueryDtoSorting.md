@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ProcessInstanceQueryDtoSorting
+# CamundaJssdk.ProcessInstanceQueryDtoSorting
 
 ## Properties
 

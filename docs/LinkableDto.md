@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.LinkableDto
+# CamundaJssdk.LinkableDto
 
 ## Properties
 

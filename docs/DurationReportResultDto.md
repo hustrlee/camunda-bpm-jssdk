@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.DurationReportResultDto
+# CamundaJssdk.DurationReportResultDto
 
 ## Properties
 

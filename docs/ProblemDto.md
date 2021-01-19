@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.ProblemDto
+# CamundaJssdk.ProblemDto
 
 ## Properties
 

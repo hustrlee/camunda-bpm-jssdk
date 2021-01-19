@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TaskApi
+# CamundaJssdk.TaskApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -39,9 +39,9 @@ Claims a task for a specific user.  **Note:** The difference with the [Set Assig
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to claim.
 let opts = {
   'userIdDto': {"userId":"aUserId"} // UserIdDto | Provide the id of the user that claims the task.
@@ -87,9 +87,9 @@ Completes a task and updates process variables.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to complete.
 let opts = {
   'completeTaskDto': {"variables":{"aVariable":{"value":"aStringValue"},"anotherVariable":{"value":42},"aThirdVariable":{"value":true}},"withVariablesInReturn":true} // CompleteTaskDto | 
@@ -135,9 +135,9 @@ Creates a new task.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let opts = {
   'taskDto': {"id":"aTaskId","name":"My Task","description":"This have to be done very urgent","priority":30,"assignee":"peter","owner":"mary","delegationState":"PENDING","due":"2014-08-30T10:00:00.000+0200","followUp":"2014-08-25T10:00:00.000+0200","parentTaskId":"aParentTaskId","caseInstanceId":"aCaseInstanceId","tenantId":null} // TaskDto | 
 };
@@ -181,9 +181,9 @@ Delegates a task to another user.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to delegate.
 let opts = {
   'userIdDto': {"userId":"aUserId"} // UserIdDto | Provide the id of the user that the task should be delegated to.
@@ -229,9 +229,9 @@ Removes a task by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to be removed.
 apiInstance.deleteTask(id).then(() => {
   console.log('API called successfully.');
@@ -273,9 +273,9 @@ Retrieves the deployed form that is referenced from a given task. For further in
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to get the deployed form for.
 apiInstance.getDeployedForm(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -317,9 +317,9 @@ Retrieves the form key for a task. The form key corresponds to the &#x60;FormDat
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to retrieve the form for.
 apiInstance.getForm(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -361,9 +361,9 @@ Retrieves the form variables for a task. The form variables take form data speci
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to retrieve the variables for.
 let opts = {
   'variableNames': "variableNames_example", // String | A comma-separated list of variable names. Allows restricting the list of requested variables to the variable names in the list. It is best practice to restrict the list of variables to the variables actually required by the form in order to minimize fetching of data. If the query parameter is ommitted all variables are fetched. If the query parameter contains non-existent variable names, the variable names are ignored.
@@ -411,9 +411,9 @@ Retrieves the rendered form for a task. This method can be used to get the HTML 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to get the rendered form for.
 apiInstance.getRenderedForm(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -455,9 +455,9 @@ Retrieves a task by id.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to be retrieved.
 apiInstance.getTask(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -499,9 +499,9 @@ Queries for tasks that fulfill a given filter. The size of the result set can be
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let opts = {
   'processInstanceId': "processInstanceId_example", // String | Restrict to tasks that belong to process instances with the given id.
   'processInstanceIdIn': "processInstanceIdIn_example", // String | Restrict to tasks that belong to process instances with the given ids.
@@ -725,9 +725,9 @@ Retrieves the number of tasks that fulfill a provided filter. Corresponds to the
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let opts = {
   'processInstanceId': "processInstanceId_example", // String | Restrict to tasks that belong to process instances with the given id.
   'processInstanceIdIn': "processInstanceIdIn_example", // String | Restrict to tasks that belong to process instances with the given ids.
@@ -943,9 +943,9 @@ Reports a business error in the context of a running task by id. The error code 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task a BPMN error is reported for.
 let opts = {
   'taskBpmnErrorDto': {"errorCode":"bpmn-error-543","errorMessage":"anErrorMessage","variables":{"aVariable":{"value":"aStringValue","type":"String"},"anotherVariable":{"value":true,"type":"Boolean"}}} // TaskBpmnErrorDto | 
@@ -991,9 +991,9 @@ Reports an escalation in the context of a running task by id. The escalation cod
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task in which context a BPMN escalation is reported.
 let opts = {
   'taskEscalationDto': {"escalationCode":"bpmn-escalation-432","variables":{"aVariable":{"value":"aStringValue","type":"String"},"anotherVariable":{"value":true,"type":"Boolean"}}} // TaskEscalationDto | 
@@ -1039,9 +1039,9 @@ Queries for tasks that fulfill a given filter. This method is slightly more powe
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let opts = {
   'firstResult': 56, // Number | Pagination of results. Specifies the index of the first result to return.
   'maxResults': 56, // Number | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
@@ -1089,9 +1089,9 @@ Retrieves the number of tasks that fulfill the given filter. Corresponds to the 
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let opts = {
   'taskQueryDto': {"taskVariables":[{"name":"varName","value":"varValue","operator":"eq"},{"name":"anotherVarName","value":30,"operator":"neq"}],"processInstanceBusinessKeyIn":"aBusinessKey,anotherBusinessKey","assigneeIn":"anAssignee,anotherAssignee","priority":10,"sorting":[{"sortBy":"dueDate","sortOrder":"asc"},{"sortBy":"processVariable","sortOrder":"desc","parameters":{"variable":"orderId","type":"String"}}]} // TaskQueryDto | 
 };
@@ -1135,9 +1135,9 @@ Resolves a task and updates execution variables.  Resolving a task marks that th
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to resolve.
 let opts = {
   'completeTaskDto': {"variables":{"aVariable":{"value":"aStringValue"},"anotherVariable":{"value":42},"aThirdVariable":{"value":true}}} // CompleteTaskDto | 
@@ -1183,9 +1183,9 @@ Changes the assignee of a task to a specific user.  **Note:** The difference wit
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to set the assignee for.
 let opts = {
   'userIdDto': {"userId":"aUserId"} // UserIdDto | Provide the id of the user that will be the assignee of the task.
@@ -1231,9 +1231,9 @@ Completes a task and updates process variables using a form submit. There are tw
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to submit the form for.
 let opts = {
   'completeTaskDto': {"variables":{"aVariable":{"value":"aStringValue"},"anotherVariable":{"value":42},"aThirdVariable":{"value":true},"aFileVariable":{"value":"TG9yZW0gaXBzdW0=","type":"File","valueInfo":{"filename":"myFile.txt"}}}} // CompleteTaskDto | 
@@ -1279,9 +1279,9 @@ Resets a task&#39;s assignee. If successful, the task is not assigned to a user.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to unclaim.
 apiInstance.unclaim(id).then(() => {
   console.log('API called successfully.');
@@ -1323,9 +1323,9 @@ Updates a task.
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.TaskApi();
+let apiInstance = new CamundaJssdk.TaskApi();
 let id = "id_example"; // String | The id of the task to be updated.
 let opts = {
   'taskDto': {"name":"My Task","description":"This have to be done very urgent","priority":30,"assignee":"peter","owner":"mary","delegationState":"PENDING","due":"2014-08-30T10:00:00.000+0200","followUp":"2014-08-25T10:00:00.000+0200","parentTaskId":"aParentTaskId","caseInstanceId":"aCaseInstanceId","tenantId":"tenantId"} // TaskDto | 

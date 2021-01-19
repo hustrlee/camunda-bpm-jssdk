@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.MessageApi
+# CamundaJssdk.MessageApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -19,9 +19,9 @@ Correlates a message to the process engine to either trigger a message start eve
 ### Example
 
 ```javascript
-import CamundaBpmRestApi from 'camunda_bpm_rest_api';
+import CamundaJssdk from 'camunda-jssdk';
 
-let apiInstance = new CamundaBpmRestApi.MessageApi();
+let apiInstance = new CamundaJssdk.MessageApi();
 let opts = {
   'correlationMessageDto': {"messageName":"aMessage","businessKey":"aBusinessKey","correlationKeys":{"aVariable":{"value":"aValue","type":"String"}},"processVariables":{"aVariable":{"value":"aNewValue","type":"String","valueInfo":{"transient":true}},"anotherVariable":{"value":true,"type":"Boolean"}}} // CorrelationMessageDto | 
 };

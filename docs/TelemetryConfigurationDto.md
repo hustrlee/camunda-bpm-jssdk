@@ -1,4 +1,4 @@
-# CamundaBpmRestApi.TelemetryConfigurationDto
+# CamundaJssdk.TelemetryConfigurationDto
 
 ## Properties
 
