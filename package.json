@@ -5,6 +5,7 @@
   "license": "Apache License 2.0",
   "main": "dist/index.js",
   "scripts": {
+    "prebuild": "npm install",
     "build": "babel src -d dist",
     "prepack": "npm run build",
     "test": "mocha --require @babel/register --recursive"
