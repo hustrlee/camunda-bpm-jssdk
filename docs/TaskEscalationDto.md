@@ -1,4 +1,4 @@
-# CamundaJssdk.TaskEscalationDto
+# CamundaBpmJssdk.TaskEscalationDto
 
 ## Properties
 

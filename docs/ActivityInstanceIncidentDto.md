@@ -1,4 +1,4 @@
-# CamundaJssdk.ActivityInstanceIncidentDto
+# CamundaBpmJssdk.ActivityInstanceIncidentDto
 
 ## Properties
 

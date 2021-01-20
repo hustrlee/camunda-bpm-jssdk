@@ -1,4 +1,4 @@
-# CamundaJssdk.RetriesDto
+# CamundaBpmJssdk.RetriesDto
 
 ## Properties
 

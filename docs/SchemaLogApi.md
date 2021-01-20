@@ -1,4 +1,4 @@
-# CamundaJssdk.SchemaLogApi
+# CamundaBpmJssdk.SchemaLogApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -20,9 +20,9 @@ Queries for schema log entries that fulfill given parameters.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.SchemaLogApi();
+let apiInstance = new CamundaBpmJssdk.SchemaLogApi();
 let opts = {
   'version': "version_example", // String | Only return schema log entries with a specific version.
   'firstResult': 56, // Number | Pagination of results. Specifies the index of the first result to return.
@@ -70,9 +70,9 @@ Queries for schema log entries that fulfill given parameters.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.SchemaLogApi();
+let apiInstance = new CamundaBpmJssdk.SchemaLogApi();
 let opts = {
   'firstResult': 56, // Number | Pagination of results. Specifies the index of the first result to return.
   'maxResults': 56, // Number | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.

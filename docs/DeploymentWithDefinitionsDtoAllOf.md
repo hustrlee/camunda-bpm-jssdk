@@ -1,4 +1,4 @@
-# CamundaJssdk.DeploymentWithDefinitionsDtoAllOf
+# CamundaBpmJssdk.DeploymentWithDefinitionsDtoAllOf
 
 ## Properties
 

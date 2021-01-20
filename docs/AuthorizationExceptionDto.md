@@ -1,4 +1,4 @@
-# CamundaJssdk.AuthorizationExceptionDto
+# CamundaBpmJssdk.AuthorizationExceptionDto
 
 ## Properties
 

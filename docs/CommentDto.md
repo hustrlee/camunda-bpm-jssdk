@@ -1,4 +1,4 @@
-# CamundaJssdk.CommentDto
+# CamundaBpmJssdk.CommentDto
 
 ## Properties
 

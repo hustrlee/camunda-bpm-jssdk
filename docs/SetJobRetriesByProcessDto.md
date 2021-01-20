@@ -1,4 +1,4 @@
-# CamundaJssdk.SetJobRetriesByProcessDto
+# CamundaBpmJssdk.SetJobRetriesByProcessDto
 
 ## Properties
 

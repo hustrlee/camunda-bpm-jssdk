@@ -1,4 +1,4 @@
-# CamundaJssdk.ProcessInstanceWithVariablesDtoAllOf
+# CamundaBpmJssdk.ProcessInstanceWithVariablesDtoAllOf
 
 ## Properties
 

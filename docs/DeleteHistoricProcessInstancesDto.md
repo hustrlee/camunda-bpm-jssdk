@@ -1,4 +1,4 @@
-# CamundaJssdk.DeleteHistoricProcessInstancesDto
+# CamundaBpmJssdk.DeleteHistoricProcessInstancesDto
 
 ## Properties
 

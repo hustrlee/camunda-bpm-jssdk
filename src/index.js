@@ -158,9 +158,9 @@ import VersionApi from './api/VersionApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var CamundaJssdk = require('index'); // See note below*.
-* var xxxSvc = new CamundaJssdk.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new CamundaJssdk.Yyy(); // Construct a model instance.
+* var CamundaBpmJssdk = require('index'); // See note below*.
+* var xxxSvc = new CamundaBpmJssdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new CamundaBpmJssdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -172,8 +172,8 @@ import VersionApi from './api/VersionApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new CamundaJssdk.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new CamundaJssdk.Yyy(); // Construct a model instance.
+* var xxxSvc = new CamundaBpmJssdk.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new CamundaBpmJssdk.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

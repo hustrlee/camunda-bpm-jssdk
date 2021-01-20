@@ -1,4 +1,4 @@
-# CamundaJssdk.FormDto
+# CamundaBpmJssdk.FormDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CamundaJssdk.HistoricActivityInstanceQueryDtoSorting
+# CamundaBpmJssdk.HistoricActivityInstanceQueryDtoSorting
 
 ## Properties
 

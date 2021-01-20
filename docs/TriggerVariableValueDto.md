@@ -1,4 +1,4 @@
-# CamundaJssdk.TriggerVariableValueDto
+# CamundaBpmJssdk.TriggerVariableValueDto
 
 ## Properties
 

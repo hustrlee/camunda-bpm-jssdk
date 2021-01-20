@@ -1,4 +1,4 @@
-# CamundaJssdk.ExternalTaskBpmnError
+# CamundaBpmJssdk.ExternalTaskBpmnError
 
 ## Properties
 

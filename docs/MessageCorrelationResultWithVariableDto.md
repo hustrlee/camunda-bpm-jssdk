@@ -1,4 +1,4 @@
-# CamundaJssdk.MessageCorrelationResultWithVariableDto
+# CamundaBpmJssdk.MessageCorrelationResultWithVariableDto
 
 ## Properties
 

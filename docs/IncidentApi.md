@@ -1,4 +1,4 @@
-# CamundaJssdk.IncidentApi
+# CamundaBpmJssdk.IncidentApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -22,9 +22,9 @@ Retrieves an incident by ID.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.IncidentApi();
+let apiInstance = new CamundaBpmJssdk.IncidentApi();
 let id = "id_example"; // String | The id of the incident to be retrieved.
 apiInstance.getIncident(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -66,9 +66,9 @@ Queries for incidents that fulfill given parameters. The size of the result set 
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.IncidentApi();
+let apiInstance = new CamundaBpmJssdk.IncidentApi();
 let opts = {
   'incidentId': "incidentId_example", // String | Restricts to incidents that have the given id.
   'incidentType': "incidentType_example", // String | Restricts to incidents that belong to the given incident type. See the [User Guide](https://docs.camunda.org/manual/7.14/user-guide/process-engine/incidents/#incident-types) for a list of incident types.
@@ -148,9 +148,9 @@ Queries for the number of incidents that fulfill given parameters. Takes the sam
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.IncidentApi();
+let apiInstance = new CamundaBpmJssdk.IncidentApi();
 let opts = {
   'incidentId': "incidentId_example", // String | Restricts to incidents that have the given id.
   'incidentType': "incidentType_example", // String | Restricts to incidents that belong to the given incident type. See the [User Guide](https://docs.camunda.org/manual/7.14/user-guide/process-engine/incidents/#incident-types) for a list of incident types.
@@ -226,9 +226,9 @@ Resolves an incident with given id.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.IncidentApi();
+let apiInstance = new CamundaBpmJssdk.IncidentApi();
 let id = "id_example"; // String | The id of the incident to be resolved.
 apiInstance.resolveIncident(id).then(() => {
   console.log('API called successfully.');

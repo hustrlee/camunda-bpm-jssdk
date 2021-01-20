@@ -1,4 +1,4 @@
-# CamundaJssdk.IncidentStatisticsResultDto
+# CamundaBpmJssdk.IncidentStatisticsResultDto
 
 ## Properties
 

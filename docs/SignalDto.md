@@ -1,4 +1,4 @@
-# CamundaJssdk.SignalDto
+# CamundaBpmJssdk.SignalDto
 
 ## Properties
 

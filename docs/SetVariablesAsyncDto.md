@@ -1,4 +1,4 @@
-# CamundaJssdk.SetVariablesAsyncDto
+# CamundaBpmJssdk.SetVariablesAsyncDto
 
 ## Properties
 

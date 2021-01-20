@@ -1,4 +1,4 @@
-# CamundaJssdk.AttachmentDto
+# CamundaBpmJssdk.AttachmentDto
 
 ## Properties
 

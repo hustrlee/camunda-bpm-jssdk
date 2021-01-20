@@ -1,4 +1,4 @@
-# CamundaJssdk.UserIdDto
+# CamundaBpmJssdk.UserIdDto
 
 ## Properties
 

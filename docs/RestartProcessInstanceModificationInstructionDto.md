@@ -1,4 +1,4 @@
-# CamundaJssdk.RestartProcessInstanceModificationInstructionDto
+# CamundaBpmJssdk.RestartProcessInstanceModificationInstructionDto
 
 ## Properties
 

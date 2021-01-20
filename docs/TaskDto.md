@@ -1,4 +1,4 @@
-# CamundaJssdk.TaskDto
+# CamundaBpmJssdk.TaskDto
 
 ## Properties
 

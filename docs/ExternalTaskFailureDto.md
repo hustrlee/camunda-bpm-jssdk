@@ -1,4 +1,4 @@
-# CamundaJssdk.ExternalTaskFailureDto
+# CamundaBpmJssdk.ExternalTaskFailureDto
 
 ## Properties
 

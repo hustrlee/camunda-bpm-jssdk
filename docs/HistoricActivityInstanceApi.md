@@ -1,4 +1,4 @@
-# CamundaJssdk.HistoricActivityInstanceApi
+# CamundaBpmJssdk.HistoricActivityInstanceApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -23,9 +23,9 @@ Retrieves a historic activity instance by id, according to the &#x60;HistoricAct
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.HistoricActivityInstanceApi();
+let apiInstance = new CamundaBpmJssdk.HistoricActivityInstanceApi();
 let id = "id_example"; // String | The id of the historic activity instance to be retrieved.
 apiInstance.getHistoricActivityInstance(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -67,9 +67,9 @@ Queries for historic activity instances that fulfill the given parameters. The s
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.HistoricActivityInstanceApi();
+let apiInstance = new CamundaBpmJssdk.HistoricActivityInstanceApi();
 let opts = {
   'sortBy': "sortBy_example", // String | Sort the results lexicographically by a given criterion. Must be used in conjunction with the sortOrder parameter.
   'sortOrder': "sortOrder_example", // String | Sort the results in a given order. Values may be asc for ascending order or desc for descending order. Must be used in conjunction with the sortBy parameter.
@@ -155,9 +155,9 @@ Queries for the number of historic activity instances that fulfill the given par
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.HistoricActivityInstanceApi();
+let apiInstance = new CamundaBpmJssdk.HistoricActivityInstanceApi();
 let opts = {
   'activityInstanceId': "activityInstanceId_example", // String | Filter by activity instance id.
   'processInstanceId': "processInstanceId_example", // String | Filter by process instance id.
@@ -235,9 +235,9 @@ Queries for historic activity instances that fulfill the given parameters. The s
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.HistoricActivityInstanceApi();
+let apiInstance = new CamundaBpmJssdk.HistoricActivityInstanceApi();
 let opts = {
   'firstResult': 56, // Number | Pagination of results. Specifies the index of the first result to return.
   'maxResults': 56, // Number | Pagination of results. Specifies the maximum number of results to return. Will return less results if there are no more results left.
@@ -285,9 +285,9 @@ Queries for the number of historic activity instances that fulfill the given par
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.HistoricActivityInstanceApi();
+let apiInstance = new CamundaBpmJssdk.HistoricActivityInstanceApi();
 let opts = {
   'historicActivityInstanceQueryDto': {"activityType":"userTask"} // HistoricActivityInstanceQueryDto | 
 };

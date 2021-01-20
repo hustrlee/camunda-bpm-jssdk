@@ -1,4 +1,4 @@
-# CamundaJssdk.HistoricProcessInstanceQueryDto
+# CamundaBpmJssdk.HistoricProcessInstanceQueryDto
 
 ## Properties
 

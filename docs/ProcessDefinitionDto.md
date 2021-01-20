@@ -1,4 +1,4 @@
-# CamundaJssdk.ProcessDefinitionDto
+# CamundaBpmJssdk.ProcessDefinitionDto
 
 ## Properties
 

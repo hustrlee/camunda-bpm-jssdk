@@ -1,4 +1,4 @@
-# CamundaJssdk.AtomLink
+# CamundaBpmJssdk.AtomLink
 
 ## Properties
 

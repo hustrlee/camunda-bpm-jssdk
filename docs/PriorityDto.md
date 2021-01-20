@@ -1,4 +1,4 @@
-# CamundaJssdk.PriorityDto
+# CamundaBpmJssdk.PriorityDto
 
 ## Properties
 

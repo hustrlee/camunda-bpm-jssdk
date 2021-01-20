@@ -1,4 +1,4 @@
-# CamundaJssdk.SignalApi
+# CamundaBpmJssdk.SignalApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -19,9 +19,9 @@ A signal is an event of global scope (broadcast semantics) and is delivered to a
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.SignalApi();
+let apiInstance = new CamundaBpmJssdk.SignalApi();
 let opts = {
   'signalDto': {"name":"policy_conditions_changed","variables":{"newTimePeriodInMonth":{"value":24}}} // SignalDto | 
 };

@@ -1,4 +1,4 @@
-# CamundaJssdk.UserProfileDto
+# CamundaBpmJssdk.UserProfileDto
 
 ## Properties
 

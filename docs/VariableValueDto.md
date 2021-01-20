@@ -1,4 +1,4 @@
-# CamundaJssdk.VariableValueDto
+# CamundaBpmJssdk.VariableValueDto
 
 ## Properties
 

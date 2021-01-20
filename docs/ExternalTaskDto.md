@@ -1,4 +1,4 @@
-# CamundaJssdk.ExternalTaskDto
+# CamundaBpmJssdk.ExternalTaskDto
 
 ## Properties
 

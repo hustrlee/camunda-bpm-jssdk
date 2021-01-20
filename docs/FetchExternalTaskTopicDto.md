@@ -1,4 +1,4 @@
-# CamundaJssdk.FetchExternalTaskTopicDto
+# CamundaBpmJssdk.FetchExternalTaskTopicDto
 
 ## Properties
 

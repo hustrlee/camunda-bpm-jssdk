@@ -1,4 +1,4 @@
-# CamundaJssdk.DecisionDefinitionDto
+# CamundaBpmJssdk.DecisionDefinitionDto
 
 ## Properties
 

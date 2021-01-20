@@ -1,4 +1,4 @@
-# CamundaJssdk.TelemetryConfigurationDto
+# CamundaBpmJssdk.TelemetryConfigurationDto
 
 ## Properties
 

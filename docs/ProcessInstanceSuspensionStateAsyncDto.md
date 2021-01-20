@@ -1,4 +1,4 @@
-# CamundaJssdk.ProcessInstanceSuspensionStateAsyncDto
+# CamundaBpmJssdk.ProcessInstanceSuspensionStateAsyncDto
 
 ## Properties
 

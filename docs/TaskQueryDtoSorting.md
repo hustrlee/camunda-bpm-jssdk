@@ -1,4 +1,4 @@
-# CamundaJssdk.TaskQueryDtoSorting
+# CamundaBpmJssdk.TaskQueryDtoSorting
 
 ## Properties
 

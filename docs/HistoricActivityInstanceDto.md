@@ -1,4 +1,4 @@
-# CamundaJssdk.HistoricActivityInstanceDto
+# CamundaBpmJssdk.HistoricActivityInstanceDto
 
 ## Properties
 

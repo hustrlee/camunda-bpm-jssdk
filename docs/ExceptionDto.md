@@ -1,4 +1,4 @@
-# CamundaJssdk.ExceptionDto
+# CamundaBpmJssdk.ExceptionDto
 
 ## Properties
 

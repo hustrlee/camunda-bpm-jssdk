@@ -1,4 +1,4 @@
-# CamundaJssdk.SchemaLogQueryDto
+# CamundaBpmJssdk.SchemaLogQueryDto
 
 ## Properties
 

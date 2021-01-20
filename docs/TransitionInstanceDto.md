@@ -1,4 +1,4 @@
-# CamundaJssdk.TransitionInstanceDto
+# CamundaBpmJssdk.TransitionInstanceDto
 
 ## Properties
 

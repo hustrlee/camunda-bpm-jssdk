@@ -1,4 +1,4 @@
-# CamundaJssdk.CommentDtoAllOf
+# CamundaBpmJssdk.CommentDtoAllOf
 
 ## Properties
 

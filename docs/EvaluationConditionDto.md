@@ -1,4 +1,4 @@
-# CamundaJssdk.EvaluationConditionDto
+# CamundaBpmJssdk.EvaluationConditionDto
 
 ## Properties
 

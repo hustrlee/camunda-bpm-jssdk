@@ -1,4 +1,4 @@
-# CamundaJssdk.ResourceOptionsDto
+# CamundaBpmJssdk.ResourceOptionsDto
 
 ## Properties
 

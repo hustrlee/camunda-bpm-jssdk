@@ -1,4 +1,4 @@
-# CamundaJssdk.SortTaskQueryParametersDto
+# CamundaBpmJssdk.SortTaskQueryParametersDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CamundaJssdk.ExecutionDto
+# CamundaBpmJssdk.ExecutionDto
 
 ## Properties
 

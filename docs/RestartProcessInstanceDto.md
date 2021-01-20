@@ -1,4 +1,4 @@
-# CamundaJssdk.RestartProcessInstanceDto
+# CamundaBpmJssdk.RestartProcessInstanceDto
 
 ## Properties
 

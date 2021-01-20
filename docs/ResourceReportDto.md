@@ -1,4 +1,4 @@
-# CamundaJssdk.ResourceReportDto
+# CamundaBpmJssdk.ResourceReportDto
 
 ## Properties
 

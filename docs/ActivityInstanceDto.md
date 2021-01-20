@@ -1,4 +1,4 @@
-# CamundaJssdk.ActivityInstanceDto
+# CamundaBpmJssdk.ActivityInstanceDto
 
 ## Properties
 

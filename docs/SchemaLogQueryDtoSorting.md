@@ -1,4 +1,4 @@
-# CamundaJssdk.SchemaLogQueryDtoSorting
+# CamundaBpmJssdk.SchemaLogQueryDtoSorting
 
 ## Properties
 

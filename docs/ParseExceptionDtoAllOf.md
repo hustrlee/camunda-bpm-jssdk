@@ -1,4 +1,4 @@
-# CamundaJssdk.ParseExceptionDtoAllOf
+# CamundaBpmJssdk.ParseExceptionDtoAllOf
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CamundaJssdk.EventSubscriptionQueryDtoSorting
+# CamundaBpmJssdk.EventSubscriptionQueryDtoSorting
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CamundaJssdk.TaskBpmnErrorDto
+# CamundaBpmJssdk.TaskBpmnErrorDto
 
 ## Properties
 

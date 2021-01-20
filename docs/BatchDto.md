@@ -1,4 +1,4 @@
-# CamundaJssdk.BatchDto
+# CamundaBpmJssdk.BatchDto
 
 ## Properties
 

@@ -9,5 +9,5 @@ openapitools/openapi-generator-cli generate \
 -i /src/$OPENAPI_FILE \
 -o /jssdk \
 -g javascript \
--p projectName=camunda-jssdk \
+-p projectName=camunda-bpm-jssdk \
 -p usePromises=true

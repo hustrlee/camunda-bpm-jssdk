@@ -1,4 +1,4 @@
-# CamundaJssdk.MetricsApi
+# CamundaBpmJssdk.MetricsApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -20,9 +20,9 @@ Retrieves the &#x60;sum&#x60; (count) for a given metric.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.MetricsApi();
+let apiInstance = new CamundaBpmJssdk.MetricsApi();
 let metricsName = "metricsName_example"; // String | The name of the metric.
 let opts = {
   'startDate': new Date("2013-10-20T19:20:30+01:00"), // Date | The start date (inclusive).
@@ -70,9 +70,9 @@ Retrieves a list of metrics, aggregated for a given interval.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.MetricsApi();
+let apiInstance = new CamundaBpmJssdk.MetricsApi();
 let opts = {
   'name': "name_example", // String | The name of the metric.
   'reporter': "reporter_example", // String | The name of the reporter (host), on which the metrics was logged. This will have value provided by the [hostname configuration property](https://docs.camunda.org/manual/7.14/reference/deployment-descriptors/tags/process-engine/#hostname).

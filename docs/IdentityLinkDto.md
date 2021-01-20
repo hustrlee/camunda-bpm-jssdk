@@ -1,4 +1,4 @@
-# CamundaJssdk.IdentityLinkDto
+# CamundaBpmJssdk.IdentityLinkDto
 
 ## Properties
 

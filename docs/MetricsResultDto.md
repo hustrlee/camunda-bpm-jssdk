@@ -1,4 +1,4 @@
-# CamundaJssdk.MetricsResultDto
+# CamundaBpmJssdk.MetricsResultDto
 
 ## Properties
 

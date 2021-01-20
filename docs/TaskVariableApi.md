@@ -1,4 +1,4 @@
-# CamundaJssdk.TaskVariableApi
+# CamundaBpmJssdk.TaskVariableApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -25,9 +25,9 @@ Removes a variable that is visible to a task. A variable is visible to a task if
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.TaskVariableApi();
+let apiInstance = new CamundaBpmJssdk.TaskVariableApi();
 let id = "id_example"; // String | The id of the task to delete the variable from.
 let varName = "varName_example"; // String | The name of the variable to be removed.
 apiInstance.deleteTaskVariable(id, varName).then(() => {
@@ -71,9 +71,9 @@ Retrieves a variable from the context of a given task. The variable must be visi
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.TaskVariableApi();
+let apiInstance = new CamundaBpmJssdk.TaskVariableApi();
 let id = "id_example"; // String | The id of the task to retrieve the variable from.
 let varName = "varName_example"; // String | The name of the variable to get.
 let opts = {
@@ -121,9 +121,9 @@ Retrieves a binary variable from the context of a given task. Applicable for byt
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.TaskVariableApi();
+let apiInstance = new CamundaBpmJssdk.TaskVariableApi();
 let id = "id_example"; // String | The id of the task to retrieve the variable for.
 let varName = "varName_example"; // String | The name of the variable to retrieve.
 apiInstance.getTaskVariableBinary(id, varName).then((data) => {
@@ -167,9 +167,9 @@ Retrieves all variables visible from the task. A variable is visible from the ta
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.TaskVariableApi();
+let apiInstance = new CamundaBpmJssdk.TaskVariableApi();
 let id = "id_example"; // String | The id of the task to retrieve the variables from.
 let opts = {
   'deserializeValue': true // Boolean | Determines whether serializable variable values (typically variables that store custom Java objects) should be deserialized on the server side (default `true`). If set to `true`, a serializable variable will be deserialized on server side and transformed to JSON using [Jackson's](https://github.com/FasterXML/jackson) POJO/bean property introspection feature. Note that this requires the Java classes of the variable value to be on the REST API's classpath.  If set to `false`, a serializable variable will be returned in its serialized format. For example, a variable that is serialized as XML will be returned as a JSON string containing XML.  Note: While `true` is the default value for reasons of backward compatibility, we recommend setting this parameter to `false` when developing web applications that are independent of the Java process applications deployed to the engine.
@@ -215,9 +215,9 @@ Updates or deletes the variables visible from the task. Updates precede deletion
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.TaskVariableApi();
+let apiInstance = new CamundaBpmJssdk.TaskVariableApi();
 let id = "id_example"; // String | The id of the task to set variables for.
 let opts = {
   'patchVariablesDto': {"modifications":{"aVariable":{"value":"aValue","type":"String"},"anotherVariable":{"value":42,"type":"Integer"}},"deletions":["aThirdVariable","FourthVariable"]} // PatchVariablesDto | 
@@ -263,9 +263,9 @@ Updates a process variable that is visible from the Task scope. A variable is vi
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.TaskVariableApi();
+let apiInstance = new CamundaBpmJssdk.TaskVariableApi();
 let id = "id_example"; // String | The id of the task to set the variable for.
 let varName = "varName_example"; // String | The name of the variable to set.
 let opts = {
@@ -313,9 +313,9 @@ Sets the serialized value for a binary variable or the binary value for a file v
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.TaskVariableApi();
+let apiInstance = new CamundaBpmJssdk.TaskVariableApi();
 let id = "id_example"; // String | The id of the task to retrieve the variable for.
 let varName = "varName_example"; // String | The name of the variable to retrieve.
 let opts = {

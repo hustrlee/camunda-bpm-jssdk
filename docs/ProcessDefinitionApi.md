@@ -1,4 +1,4 @@
-# CamundaJssdk.ProcessDefinitionApi
+# CamundaBpmJssdk.ProcessDefinitionApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -63,9 +63,9 @@ Deletes a running process instance by id.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to be deleted.
 let opts = {
   'cascade': true, // Boolean | `true`, if all process instances, historic process instances and jobs for this process definition should be deleted.
@@ -115,9 +115,9 @@ Deletes process definitions by a given key which belong to no tenant id.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definitions to be deleted.
 let opts = {
   'cascade': true, // Boolean | `true`, if all process instances, historic process instances and jobs for this process definition should be deleted.
@@ -167,9 +167,9 @@ Deletes process definitions by a given key and which belong to a tenant id.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definitions to be deleted.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definitions belong to.
 let opts = {
@@ -221,9 +221,9 @@ Retrieves runtime statistics of a given process definition, grouped by activitie
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition.
 let opts = {
   'failedJobs': true, // Boolean | Whether to include the number of failed jobs in the result or not. Valid values are `true` or `false`.
@@ -273,9 +273,9 @@ Retrieves runtime statistics of the latest version of the given process definiti
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let opts = {
   'failedJobs': true, // Boolean | Whether to include the number of failed jobs in the result or not. Valid values are `true` or `false`.
@@ -325,9 +325,9 @@ Retrieves runtime statistics of the latest version of the given process definiti
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 let opts = {
@@ -379,9 +379,9 @@ Retrieves the deployed form that can be referenced from a start event. For furth
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to get the deployed start form for.
 apiInstance.getDeployedStartForm(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -423,9 +423,9 @@ Retrieves the deployed form that can be referenced from a start event. For furth
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 apiInstance.getDeployedStartFormByKey(key).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -467,9 +467,9 @@ Retrieves the deployed form that can be referenced from a start event. For furth
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definitions belong to.
 apiInstance.getDeployedStartFormByKeyAndTenantId(key, tenantId).then((data) => {
@@ -513,9 +513,9 @@ Retrieves the latest version of the process definition for tenant according to t
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 apiInstance.getLatestProcessDefinitionByTenantId(key, tenantId).then((data) => {
@@ -559,9 +559,9 @@ Retrieves a process definition according to the &#x60;ProcessDefinition&#x60; in
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to be retrieved.
 apiInstance.getProcessDefinition(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -603,9 +603,9 @@ Retrieves the BPMN 2.0 XML of a process definition.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition.
 apiInstance.getProcessDefinitionBpmn20Xml(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -647,9 +647,9 @@ Retrieves latest version the BPMN 2.0 XML of a process definition.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) whose XML should be retrieved.
 apiInstance.getProcessDefinitionBpmn20XmlByKey(key).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -691,9 +691,9 @@ Retrieves latest version the BPMN 2.0 XML of a process definition. Returns the X
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) whose XML should be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 apiInstance.getProcessDefinitionBpmn20XmlByKeyAndTenantId(key, tenantId).then((data) => {
@@ -737,9 +737,9 @@ Retrieves the latest version of the process definition which belongs to no tenan
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 apiInstance.getProcessDefinitionByKey(key).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -781,9 +781,9 @@ Retrieves the diagram of a process definition.  If the process definition&#39;s 
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition.
 apiInstance.getProcessDefinitionDiagram(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -825,9 +825,9 @@ Retrieves the diagram for the latest version of the process definition which bel
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition.
 apiInstance.getProcessDefinitionDiagramByKey(key).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -869,9 +869,9 @@ Retrieves the diagram for the latest version of the process definition for tenan
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 apiInstance.getProcessDefinitionDiagramByKeyAndTenantId(key, tenantId).then((data) => {
@@ -915,9 +915,9 @@ Retrieves runtime statistics of the process engine, grouped by process definitio
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let opts = {
   'failedJobs': true, // Boolean | Whether to include the number of failed jobs in the result or not. Valid values are `true` or `false`.
   'incidents': true, // Boolean | Valid values for this property are `true` or `false`. If this property has been set to `true` the result will include the corresponding number of incidents for each occurred incident type. If it is set to `false`, the incidents will not be included in the result. Cannot be used in combination with `incidentsForType`.
@@ -967,9 +967,9 @@ Queries for process definitions that fulfill given parameters. Parameters may be
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let opts = {
   'processDefinitionId': "processDefinitionId_example", // String | Filter by process definition id.
   'processDefinitionIdIn': "processDefinitionIdIn_example", // String | Filter by a comma-separated list of process definition ids.
@@ -1083,9 +1083,9 @@ Requests the number of process definitions that fulfill the query criteria. Take
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let opts = {
   'processDefinitionId': "processDefinitionId_example", // String | Filter by process definition id.
   'processDefinitionIdIn': "processDefinitionIdIn_example", // String | Filter by a comma-separated list of process definition ids.
@@ -1191,9 +1191,9 @@ Retrieves the rendered form for a process definition. This method can be used to
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to get the rendered start form for.
 apiInstance.getRenderedStartForm(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1235,9 +1235,9 @@ Retrieves  the rendered form for the latest version of the process definition wh
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 apiInstance.getRenderedStartFormByKey(key).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1279,9 +1279,9 @@ Retrieves  the rendered form for the latest version of the process definition fo
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 apiInstance.getRenderedStartFormByKeyAndTenantId(key, tenantId).then((data) => {
@@ -1325,9 +1325,9 @@ Retrieves the key of the start form for a process definition. The form key corre
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to get the start form key for.
 apiInstance.getStartForm(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1369,9 +1369,9 @@ Retrieves the key of the start form for the latest version of the process defini
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) for which the form key is to be retrieved.
 apiInstance.getStartFormByKey(key).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -1413,9 +1413,9 @@ Retrieves the key of the start form for the latest version of the process defini
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) for which the form key is to be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 apiInstance.getStartFormByKeyAndTenantId(key, tenantId).then((data) => {
@@ -1459,9 +1459,9 @@ Retrieves the start form variables for a process definition (only if they are de
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to retrieve the variables for.
 let opts = {
   'variableNames': "variableNames_example", // String | A comma-separated list of variable names. Allows restricting the list of requested variables to the variable names in the list. It is best practice to restrict the list of variables to the variables actually required by the form in order to minimize fetching of data. If the query parameter is ommitted all variables are fetched. If the query parameter contains non-existent variable names, the variable names are ignored.
@@ -1509,9 +1509,9 @@ Retrieves the start form variables for the latest process definition which belon
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let opts = {
   'variableNames': "variableNames_example", // String | A comma-separated list of variable names. Allows restricting the list of requested variables to the variable names in the list. It is best practice to restrict the list of variables to the variables actually required by the form in order to minimize fetching of data. If the query parameter is ommitted all variables are fetched. If the query parameter contains non-existent variable names, the variable names are ignored.
@@ -1559,9 +1559,9 @@ Retrieves the start form variables for the latest process definition for a tenan
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 let opts = {
@@ -1611,9 +1611,9 @@ Restarts process instances that were canceled or terminated synchronously. Can a
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition of the process instances to restart.
 let opts = {
   'restartProcessInstanceDto': {"instructions":[{"type":"startAfterActivity","activityId":"aUserTask"}],"processInstanceIds":["aProcessInstance","anotherProcessInstance"],"initialVariables":true,"skipCustomListeners":true,"withoutBusinessKey":true} // RestartProcessInstanceDto | 
@@ -1659,9 +1659,9 @@ Restarts process instances that were canceled or terminated asynchronously. Can 
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition of the process instances to restart.
 let opts = {
   'restartProcessInstanceDto': {"instructions":[{"type":"startAfterActivity","activityId":"aUserTask"}],"processInstanceIds":["aProcessInstance","anotherProcessInstance"],"initialVariables":true,"skipCustomListeners":true,"withoutBusinessKey":true} // RestartProcessInstanceDto | 
@@ -1707,9 +1707,9 @@ Instantiates a given process definition. Process variables and business key may 
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to be retrieved.
 let opts = {
   'startProcessInstanceDto': {"variables":{"aVariable":{"value":"aStringValue","type":"String"},"anotherVariable":{"value":true,"type":"Boolean"}},"businessKey":"myBusinessKey"} // StartProcessInstanceDto | 
@@ -1755,9 +1755,9 @@ Instantiates a given process definition, starts the latest version of the proces
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let opts = {
   'startProcessInstanceDto': {"variables":{"aVariable":{"value":"aStringValue","type":"String"},"anotherVariable":{"value":true,"type":"Boolean"}},"businessKey":"myBusinessKey"} // StartProcessInstanceDto | 
@@ -1803,9 +1803,9 @@ Instantiates a given process definition, starts the latest version of the proces
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be retrieved.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 let opts = {
@@ -1853,9 +1853,9 @@ Starts a process instance using a set of process variables and the business key.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to submit the form for.
 let opts = {
   'startProcessInstanceFormDto': {"variables":{"aVariable":{"value":"aStringValue","type":"String"},"anotherVariable":{"value":true,"type":"Boolean"}},"businessKey":"myBusinessKey"} // StartProcessInstanceFormDto | 
@@ -1901,9 +1901,9 @@ Starts the latest version of the process definition which belongs to no tenant u
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition to submit the form for.
 let opts = {
   'startProcessInstanceFormDto': {"variables":{"aVariable":{"value":"aStringValue","type":"String"},"anotherVariable":{"value":true,"type":"Boolean"}},"businessKey":"myBusinessKey"} // StartProcessInstanceFormDto | 
@@ -1949,9 +1949,9 @@ Starts the latest version of the process definition for a tenant using a set of 
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition to submit the form for.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 let opts = {
@@ -1999,9 +1999,9 @@ Updates history time to live for process definition. The field is used within [H
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to change history time to live.
 let opts = {
   'historyTimeToLiveDto': {"historyTimeToLive":5} // HistoryTimeToLiveDto | 
@@ -2047,9 +2047,9 @@ Updates history time to live for the latest version of the process definition wh
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition to change history time to live.
 let opts = {
   'historyTimeToLiveDto': {"historyTimeToLive":5} // HistoryTimeToLiveDto | 
@@ -2095,9 +2095,9 @@ Updates history time to live for the latest version of the process definition fo
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition to change history time to live.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 let opts = {
@@ -2145,9 +2145,9 @@ Activates or suspends process definitions with the given process definition key.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let opts = {
   'processDefinitionSuspensionStateDto': {"processDefinitionKey":"aProcessDefinitionKey","suspended":true,"includeProcessInstances":true,"executionDate":"2013-11-21T10:49:45T14:42:45"} // ProcessDefinitionSuspensionStateDto | **Note**: Unallowed property is `processDefinitionId`.
 };
@@ -2191,9 +2191,9 @@ Activates or suspends a given process definition by id.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let id = "id_example"; // String | The id of the process definition to activate or suspend.
 let opts = {
   'processDefinitionSuspensionStateDto': {"suspended":true,"includeProcessInstances":true,"executionDate":"2013-11-21T10:49:45T14:42:45"} // ProcessDefinitionSuspensionStateDto | **Note**: Unallowed properties are `processDefinitionId` and `processDefinitionKey`.
@@ -2239,9 +2239,9 @@ Activates or suspends a given process definition by latest version of process de
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be activated/suspended.
 let opts = {
   'processDefinitionSuspensionStateDto': {"suspended":true,"includeProcessInstances":true,"executionDate":"2013-11-21T10:49:45T14:42:45"} // ProcessDefinitionSuspensionStateDto | **Note**: Unallowed properties are `processDefinitionId` and `processDefinitionKey`.
@@ -2287,9 +2287,9 @@ Activates or suspends a given process definition by the latest version of the pr
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.ProcessDefinitionApi();
+let apiInstance = new CamundaBpmJssdk.ProcessDefinitionApi();
 let key = "key_example"; // String | The key of the process definition (the latest version thereof) to be activated/suspended.
 let tenantId = "tenantId_example"; // String | The id of the tenant the process definition belongs to.
 let opts = {

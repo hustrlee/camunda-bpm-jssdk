@@ -1,4 +1,4 @@
-# CamundaJssdk.VersionApi
+# CamundaBpmJssdk.VersionApi
 
 All URIs are relative to *http://localhost:8080/engine-rest*
 
@@ -19,9 +19,9 @@ Retrieves the version of the Rest API.
 ### Example
 
 ```javascript
-import CamundaJssdk from 'camunda-jssdk';
+import CamundaBpmJssdk from 'camunda-bpm-jssdk';
 
-let apiInstance = new CamundaJssdk.VersionApi();
+let apiInstance = new CamundaBpmJssdk.VersionApi();
 apiInstance.getRestAPIVersion().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
