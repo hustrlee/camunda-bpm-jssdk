@@ -52,39 +52,48 @@ npm link camunda-bpm-jssdk
 
 ### git 安装
 
-If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
-then install it via:
-
 ```shell
-    npm install GIT_USER_ID/GIT_REPO_ID --save
+    npm install hustrlee/camunda-bpm-jssdk
 ```
 
 
 
-## Getting Started
-
-Please follow the [installation](#installation) instruction and execute the following JS code:
+## 示例
 
 ```javascript
-var CamundaBpmJssdk = require('camunda-bpm-jssdk');
+// Camunda BPM 已经安装，且 REST API 根路径为：http://localhost:8080/engine-rest
+// 如果根路径不正确，请修改 node_modules/camunda_bpm_rest_api/dist/ApiClient.js 中的 basePath
 
+const CamundaSDK = require("camunda-bpm-jssdk");
 
-var api = new CamundaBpmJssdk.ConditionApi()
-var opts = {
-  'evaluationConditionDto': {"variables":{"temperature":{"value":24,"type":"Integer","valueInfo":{"transient":true}},"city":{"value":"Parma","type":"String"}},"businessKey":"aBusinessKey","tenantId":"aTenantId"} // {EvaluationConditionDto} 
-};
-api.evaluateCondition(opts).then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
+let versionApi = new CamundaSDK.VersionApi();
 
+// 使用 Promise
+versionApi.getRestAPIVersion().then(
+  data => {
+    console.log("Camunda BPM Engine Version: " + data.version);
+  },
+  error => {
+    console.error(error);
+  }
+);
 
+// 使用 async/await
+(async () => {
+  let data = await versionApi.getRestAPIVersion();
+  console.log("Camunda BPM Engine Version: " + data.version);
+})();
 ```
 
-## Documentation for API Endpoints
+执行以上代码，获得 Camunda REST API 的版本号。
 
-All URIs are relative to *http://localhost:8080/engine-rest*
+
+
+## API 参考文档
+
+URI： *http://localhost:8080/engine-rest*
+
+如需修改 URI，请修改：`node_modules/camunda_bpm_rest_api/dist/ApiClient.js` 中的 `basePath`。
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
