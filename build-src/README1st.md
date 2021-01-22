@@ -66,22 +66,6 @@ usePromises=true
 
 该 SDK 并不打算发布到 [npm](https://npmjs.com)，需要本地打包、安装。
 
-### Issues！
-
-使用 OpenAPITools Generator 5.0.0-SNAPSHOT 和 camunda-engine-rest-openapi-7.13.0 的生成结果有两个 issues：
-
-- **_Bug_**：错误生成了 `AnyType`，将导致无法使用该 SDK。
-  
-  - issue：生成结果在 `src/api/ExternalTaskApi.js` 中导入的 `../model/AnyType`，但是`AnyType` 并不存在，且没有被引用过。
-  - resolve：直接注释该行。
-  ```javascript
-  // import AnyType from '../model/AnyType';
-  ```
-- **_Warning_**：`openapi.json` 中定义的 `EventSubscriptionQueryDto` 并没有被使用。这是一个 **_warning_**，并不影响 SDK 的生成和使用。
-  
-  - issue：在 `openapi.json` 中定义了 `EventSubscriptionQueryDto`，但它没有被使用。
-  - resolve：编辑 `openapi.json`，删除 `EventSubscriptionQueryDto`，然后重新生成。
-
 
 
 ### Pack

@@ -102,7 +102,7 @@ versionApi.getRestAPIVersion().then(
 
 ## API 参考文档
 
-URI： *http://localhost:8080/engine-rest*。如需修改 URI，请修改：`node_modules/camunda_bpm_rest_api/dist/ApiClient.js` 中的 `basePath`。
+URI： **http://localhost:8080/engine-rest**。如需修改 URI，请修改：`node_modules/camunda_bpm_rest_api/dist/ApiClient.js` 中的 `basePath`。
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
