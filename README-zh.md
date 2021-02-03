@@ -22,27 +22,38 @@
 
 ### 本地安装
 
-假设 Camunda BPM JSSDK 保存在名为 `JAVASCRIPT_CLENT_DIR` 的本地路径（即本 README 文件所在路径），开发者可以通过以下方式来安装本软件包：
+可以使用预打包好的软件包来进行本地安装。
 
-- 在 `JAVASCRIPT_CLIENT_DIR` 目录下执行以下命令，安装依赖包：
+- 下载发布在 Github 上的预打包文件：[camunda-bpm-jssdk v7.14.0 预打包下载](https://github.com/hustrlee/camunda-bpm-jssdk/releases/download/v7.14.0/camunda-bpm-jssdk-7.14.0.tgz)
+- 将预打包文件存储在要使用 `camunda-bpm-jssdk` 软件包的工程目录下，并执行以下命令进行安装：
+
+```shell
+npm install camunda-bpm-jssdk-7.14.0.tgz --save
+```
+
+
+
+~~假设 Camunda BPM JSSDK 保存在名为 `JAVASCRIPT_CLENT_DIR` 的本地路径（即本 README 文件所在路径），开发者可以通过以下方式来安装本软件包：~~
+
+- ~~在 `JAVASCRIPT_CLIENT_DIR` 目录下执行以下命令，安装依赖包：~~
 
 ```shell
 npm install
 ```
 
-- 在 `JAVASCRIPT_CLIENT_DIR` 目录下执行以下命令，编译本模块：
+- ~~在 `JAVASCRIPT_CLIENT_DIR` 目录下执行以下命令，编译本模块：~~
 
 ```shell
 npm run build
 ```
 
-- 然后，在 `JAVASCRIPT_CLIENT_DIR` 目录下执行以下命令，将 `camunda-bpm-jssdk` 注册到全局：
+- ~~然后，在 `JAVASCRIPT_CLIENT_DIR` 目录下执行以下命令，将 `camunda-bpm-jssdk` 注册到全局：~~
 
 ```shell
 npm link
 ```
 
-- 将目录切换至要使用 `camunda-bpm-jssdk` 软件包的工程目录，执行以下命令，将全局的 `camunda-bpm-jssdk` 注册到本工程中：
+- ~~将目录切换至要使用 `camunda-bpm-jssdk` 软件包的工程目录，执行以下命令，将全局的 `camunda-bpm-jssdk` 注册到本工程中：~~
 
 ```shell
 npm link camunda-bpm-jssdk
@@ -53,38 +64,45 @@ npm link camunda-bpm-jssdk
 ### git 安装
 
 ```shell
-    npm install hustrlee/camunda-bpm-jssdk --save
+npm install hustrlee/camunda-bpm-jssdk
 ```
 
 
 
-## Getting Started
-
-Please follow the [installation](#installation) instruction and execute the following JS code:
+## 示例
 
 ```javascript
-var CamundaBpmJssdk = require('camunda-bpm-jssdk');
+// Camunda BPM 已经安装，且 REST API 根路径为：http://localhost:8080/engine-rest
+// 如果根路径不正确，请修改 node_modules/camunda_bpm_rest_api/dist/ApiClient.js 中的 basePath
 
+const CamundaSDK = require("camunda-bpm-jssdk");
 
-var api = new CamundaBpmJssdk.ConditionApi()
-var opts = {
-  'evaluationConditionDto': {"variables":{"temperature":{"value":24,"type":"Integer","valueInfo":{"transient":true}},"city":{"value":"Parma","type":"String"}},"businessKey":"aBusinessKey","tenantId":"aTenantId"} // {EvaluationConditionDto} 
-};
-api.evaluateCondition(opts).then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
+let versionApi = new CamundaSDK.VersionApi();
 
+// 使用 Promise
+versionApi.getRestAPIVersion().then(
+  data => {
+    console.log("Camunda BPM Engine Version: " + data.version);
+  },
+  error => {
+    console.error(error);
+  }
+);
 
+// 使用 async/await
+(async () => {
+  let data = await versionApi.getRestAPIVersion();
+  console.log("Camunda BPM Engine Version: " + data.version);
+})();
 ```
 
+执行以上代码，获得 Camunda REST API 的版本号。
 
 
-## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:8080/engine-rest*
+## API 参考文档
 
+URI： **http://localhost:8080/engine-rest**。如需修改 URI，请修改：`node_modules/camunda_bpm_rest_api/dist/ApiClient.js` 中的 `basePath`。
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CamundaBpmJssdk.ConditionApi* | [**evaluateCondition**](docs/ConditionApi.md#evaluateCondition) | **POST** /condition | 
@@ -271,7 +289,8 @@ Class | Method | HTTP request | Description
 *CamundaBpmJssdk.VersionApi* | [**getRestAPIVersion**](docs/VersionApi.md#getRestAPIVersion) | **GET** /version | 
 
 
-## Documentation for Models
+
+## 数据模型参考文档
 
  - [CamundaBpmJssdk.AbstractSetRemovalTimeDto](docs/AbstractSetRemovalTimeDto.md)
  - [CamundaBpmJssdk.ActivityInstanceDto](docs/ActivityInstanceDto.md)
@@ -389,6 +408,3 @@ Class | Method | HTTP request | Description
  - [CamundaBpmJssdk.VersionDto](docs/VersionDto.md)
 
 
-## Documentation for Authorization
-
-All endpoints do not require authorization.

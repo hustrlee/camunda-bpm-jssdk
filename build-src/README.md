@@ -4,21 +4,20 @@ Camunda 官方提供了 [JS Client Library](https://github.com/camunda/camunda-b
 
 
 
-## 版本
-
-预编译版本已经更新到 Camunda BPM 7.14 - Snapshot。
-
-
-
 ## 生成
 
-编辑脚本 `clientgen.sh` 以更新到最新的 Camunda OpenAPI Documentation。然后，执行脚本生成 Javascript 客户端。
+执行脚本 `clientgen.sh` 生成 Javascript 客户端。
 
 ```bash
 ./clientgen.sh
 ```
 
-生成的客户端库保存在 `jssdk-out/` 目录下。
 
 
+## 打包
+
+```shell
+npm install
+npm pack
+```
 
