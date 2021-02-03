@@ -52,11 +52,8 @@ npm link camunda-bpm-jssdk
 
 ### git 安装
 
-If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
-then install it via:
-
 ```shell
-    npm install GIT_USER_ID/GIT_REPO_ID --save
+    npm install hustrlee/camunda-bpm-jssdk --save
 ```
 
 
@@ -81,6 +78,8 @@ api.evaluateCondition(opts).then(function(data) {
 
 
 ```
+
+
 
 ## Documentation for API Endpoints
 
